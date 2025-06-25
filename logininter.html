@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Este es el Ejercicio 8" />
+    <meta name="author" content="Jorge Merlo" />
+    <title>Ejercicio 8</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+
+  <body>
+    
+    <div class="wrapper">
+        <form action="" id="loginForm">
+            <h1>Ingresar</h1>
+            <br>
+            <p>Para continuar debes ingresar tus datos de acceso de Intermediario</p>
+            <div class="input-box">
+                <input type="text" id="usuario" placeholder="Ingresa tu usuario de cliente" required>
+                <i class='bx bx-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="text" id="contrasena" placeholder="Ingresa tu contraseña" required>
+                <i class='bx bx-lock-alt'></i>
+            </div>
+
+            <div class="olvidocontra">
+                <label><input type="checkbox">Recuerdame</label>
+                <a href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+            <button type="submit" class="boton">Ingresar</button>
+            
+            <div class="registro-link"></div>
+            <p>¿No tienes una cuenta?
+                <a href="#">Registrate</a></p>
+
+        </form>
+        
+    </div>
+    <script>
+        // Mostrar mensaje al hacer clic en "Ingresar"
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevenir la recarga de la página al enviar el formulario
+
+            // Mostrar un mensaje indicando que el usuario está navegando como cliente
+            alert('Estás navegando como Intermediario.');
+
+            // Aquí podrías agregar la lógica para verificar el login o redirigir a otra página
+        });
+    </script>
+   </body>
+</html>
